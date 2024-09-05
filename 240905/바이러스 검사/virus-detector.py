@@ -4,7 +4,7 @@ boss, employee = map(int,input().split(' '))
 
 answer = 0
 for store in stores:
-    if store - boss < 0:
+    if store - boss <= 0:
         answer += 1
         continue
     if (store-boss)%employee ==0:
