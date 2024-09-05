@@ -7,7 +7,7 @@ for store in stores:
     if store - boss <= 0:
         answer += 1
         continue
-    if (store-boss)%employee ==0:
+    elif (store-boss)%employee ==0:
         answer += (store-boss)//employee + 1
     else:
         answer += (store-boss)//employee + 2
