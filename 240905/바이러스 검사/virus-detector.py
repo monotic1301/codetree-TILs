@@ -1,6 +1,6 @@
 n = int(input())
-stores = list(map(int,input().split(' ')))
-boss, employee = map(int,input().split(' '))
+stores = list(map(int,input().strip().split(' ')))
+boss, employee = map(int,input().strip().split(' '))
 
 answer = 0
 for store in stores:
