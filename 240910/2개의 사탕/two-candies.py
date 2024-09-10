@@ -42,7 +42,7 @@ answer = -1
 while queue:
     # print(queue)
     box, red, blue, count = queue.popleft()
-    if answer != -1 or count == 10:
+    if answer != -1 or count == 11:
         break
     for d in range(4):  # 4방향에 대해서 시도
         new_box, new_red = moving(deepcopy(box), deepcopy(red), d)
